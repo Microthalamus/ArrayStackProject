@@ -1,10 +1,11 @@
 import unittest
-import StackArray
+from StackArray import ArrayStack
 
+s = ArrayStack()
 
 class MyTestCase(unittest.TestCase):
     def test_emptyStack(self):
-        self.assertEqual(StackArray, 0)  # Test to see if stack is empty
+        self.assertFalse(s, 0)  # Test to see if stack is empty
 
 
 if __name__ == '__main__':
