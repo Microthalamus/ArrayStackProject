@@ -19,5 +19,10 @@ def main_menu():
     print('3. Peek')
     print('4. Quit')
     choice = int(input())
+    exec_menu(choice)
+
+# Function for execute menu
+
+
 
 main_menu()
