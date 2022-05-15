@@ -23,6 +23,15 @@ def main_menu():
 
 # Function for execute menu
 
-
+def exec_menu(choice):
+    os.system('cls')
+    if choice == 1:
+        print("Please Enter an Integer")
+        integer = int(input())
+        s.push(integer)
+        main_menu()
+    else:
+        print('Invalid option, please try again')
+        main_menu()
 
 main_menu()
