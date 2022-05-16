@@ -3,10 +3,12 @@ class ArrayStack:
     def __init__(self):
         self._data = []
 
-    def stack_empty(self): # Function for checking if stack is empty
+    def stack_empty(self):
+        # Function for checking if stack is empty
         return len(self._data) == 0
 
     def push(self, e):
+        # Push Function
         try:
             self._data.append(e)
             if not isinstance(e, int):
@@ -18,6 +20,7 @@ class ArrayStack:
                 self.push(integer)
 
     def pop(self):
+        # Pop Function
         try:
             return self._data.pop()
 
@@ -29,6 +32,7 @@ class ArrayStack:
             self.push(integer)
 
     def top(self):
+        # Peek Funtion
         try:
             return self._data[0]
             print('The top is :', self._data[0])
